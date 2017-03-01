@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { questionsReducer } from '../reducers/questionsReducer';
+import questionsReducer from '../reducers/questionsReducer';
 
 const rootReducer = combineReducers({
   questions: questionsReducer,
