@@ -1,4 +1,4 @@
-initialState = [
+const initialState = [
   {
     id: 1,
     question: 'What is Redux Thunk?',
@@ -9,9 +9,9 @@ initialState = [
     question: 'What is React?',
     description: 'I really want to know',
   }
-]
+];
 
-const questionsReducer = (state = initialState, action) {
+const questionsReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'FETCH_QUESTIONS':
       return state;
