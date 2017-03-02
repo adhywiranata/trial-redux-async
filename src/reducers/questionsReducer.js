@@ -1,15 +1,4 @@
-const initialState = [
-  {
-    id: 1,
-    question: 'What is Redux Thunk?',
-    description: 'I really want to know',
-  },
-  {
-    id: 2,
-    question: 'What is React?',
-    description: 'I really want to know',
-  }
-];
+const initialState = [];
 
 const questionsReducer = (state = initialState, action) => {
   switch(action.type) {

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import QuestionItem from './QuestionItem';
 import { fetchQuestionsSuccess, fetchQuestions } from '../../actions';
 import styles from './styles.css';
+import catGif from './animal.gif';
 
 class QuestionsList extends Component {
 
@@ -14,6 +15,7 @@ class QuestionsList extends Component {
   render() {
     return (
     <div className={styles.questionsList}>
+      { this.props.questions.length === 0 ? <img src={catGif} alt="loading" /> : true }
       { this.props.questions.map(item => (<QuestionItem key={item.id} {...item} />)) }
     </div>
     );
